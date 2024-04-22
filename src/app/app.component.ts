@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-list';
+
+  loadedFeature = 'recipe';
+
+  hdlNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
